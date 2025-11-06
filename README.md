@@ -1,3 +1,7 @@
+# About this repository
+
+Public repository forked from morrissharp/webarena:main(3de52d3c46ce8280f9473ca5bd45077ff1737527). Currently, the repo is not in use but serves as a backup for morrissharp/webarena (which is used as a submodule at Project24_LI).
+
 # WebArena: A Realistic Web Environment for Building Autonomous Agents
 <p align="center">
     <img src="media/logo.png" alt="Logo" width="80px">
