@@ -12756,7 +12756,7 @@
       "reference_url": "",
       "program_html": [
         {
-          "url": "__REDDIT__/f/deeplearning/124993/meta-s-llama-weights-leaked-on-torrent-and-the-best-thing",
+          "url": "__REDDIT__/f/deeplearning/125036/should-i-continue-with-this",
           "locator": "document.querySelector('div.submission__vote').querySelector('form').getAttribute('class')",
           "required_contents": {
             "must_include": [
