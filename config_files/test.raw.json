@@ -2111,8 +2111,8 @@
       ],
       "reference_answers": {
         "must_include": [
-          "http://www.reddit.com/f/books/59396/apple-books-has-a-free-audiobook-of-a-christmas-carol",
-          "http://www.reddit.com/f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter"
+          "__REDDIT__/f/books/59396/apple-books-has-a-free-audiobook-of-a-christmas-carol",
+          "__REDDIT__/f/books/17445/i-just-finished-reading-the-hobbit-to-my-6-year-old-daughter"
         ]
       },
       "reference_url": "",
