@@ -909,13 +909,13 @@
       ],
       "reference_answers": {
         "must_include": [
-          "0"
+          "1"
         ]
       },
       "reference_url": "",
       "program_html": [],
       "string_note": "",
-      "reference_answer_raw_annotation": "0"
+      "reference_answer_raw_annotation": "1"
     },
     "intent_template_id": 33
   },
