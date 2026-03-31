@@ -9317,7 +9317,7 @@
         "string_match"
       ],
       "reference_answers": {
-        "must_include": ["git clone ssh://git@metis.lti.cs.cmu.edu:2222/yjlou/2019-nCov.git"]
+        "must_include": ["ssh://git@metis.lti.cs.cmu.edu:2222/yjlou/2019-nCov.git"]
       },
       "reference_url": "",
       "program_html": [],
@@ -9723,12 +9723,12 @@
         "string_match"
       ],
       "reference_answers": {
-        "must_include": ["Erik Linder-Nor\u00e9n"]
+        "must_include": ["Erik Linder-Nor\u00e9n |OR| Erik Linder-Noren"]
       },
       "reference_url": "",
       "program_html": [],
       "string_note": "",
-      "reference_answer_raw_annotation": "Erik Linder-Nor\u00e9n"
+      "reference_answer_raw_annotation": "Erik Linder-Nor\u00e9n |OR| Erik Linder-Noren"
     },
     "intent_template_id": 323
   },
@@ -9912,15 +9912,15 @@
       ],
       "reference_answers": {
         "must_include": [
-          "Susan Zhang: 70",
-          "Stephen Roller: 51",
-          "Peter Albert: 12"
+          "Susan Zhang: 70 |OR| Susan Zhang, 70 |OR| Susan Zhang - 70",
+          "Stephen Roller: 51 |OR| Stephen Roller, 51 |OR| Stephen Roller - 51",
+          "Peter Albert: 12 |OR| Peter Albert, 12 |OR| Peter Albert - 12"
         ]
       },
       "reference_url": "",
       "program_html": [],
       "string_note": "",
-      "reference_answer_raw_annotation": "Susan Zhang: 70, Stephen Roller: 51, Peter Albert: 12"
+      "reference_answer_raw_annotation": "Susan Zhang: 70 |OR| Susan Zhang, 70 |OR| Susan Zhang - 70, Stephen Roller: 51 |OR| Stephen Roller, 51 |OR| Stephen Roller - 51, Peter Albert: 12 |OR| Peter Albert, 12 |OR| Peter Albert - 12"
     },
     "intent_template_id": 324
   },
