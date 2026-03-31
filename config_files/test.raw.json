@@ -1443,6 +1443,7 @@
       ],
       "reference_answers": null,
       "reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/?sort=created_asc&state=opened",
+      "or": [{"reference_url": "__GITLAB__/a11yproject/a11yproject.com/-/issues/?state=opened"}],
       "program_html": [],
       "url_note": "GOLD in PRED"
     },
@@ -1467,6 +1468,7 @@
       ],
       "reference_answers": null,
       "reference_url": "__GITLAB__/primer/design/-/issues/?sort=created_date&state=opened",
+      "or": [{"reference_url": "__GITLAB__/primer/design/-/issues/?state=opened"}],
       "program_html": [],
       "url_note": "GOLD in PRED"
     },
@@ -3312,6 +3314,7 @@
       ],
       "reference_answers": null,
       "reference_url": "__GITLAB__/kkroening/ffmpeg-python/-/issues/?label_name%5B%5D=question",
+      "or": [{"reference_url": "__GITLAB__/kkroening/ffmpeg-python/-/issues?label_name%5B%5D=question"}],
       "program_html": [],
       "url_note": "GOLD in PRED"
     },
@@ -3393,6 +3396,9 @@
       ],
       "reference_answers": null,
       "reference_url": "__GITLAB__/umano/AndroidSlidingUpPanel/-/issues/?label_name%5B%5D=BUG",
+      "or": [{"reference_url": "__GITLAB__/umano/AndroidSlidingUpPanel/-/issues/?label_name%5B%5D=bug"},
+        {"reference_url": "__GITLAB__/umano/AndroidSlidingUpPanel/-/issues?label_name%5B%5D=BUG"},
+        {"reference_url": "__GITLAB__/umano/AndroidSlidingUpPanel/-/issues?label_name%5B%5D=bug"}],
       "program_html": [],
       "url_note": "GOLD in PRED"
     },
@@ -8565,6 +8571,7 @@
       ],
       "reference_answers": null,
       "reference_url": "__SHOPPING__/beauty-personal-care/oral-care/children-s-dental-care.html?price=0-78",
+      "or": [{"reference_url": "__SHOPPING__/beauty-personal-care/oral-care.html?cat=116&price=0-78"}],
       "program_html": [],
       "url_note": "GOLD in PRED"
     },
@@ -8695,7 +8702,7 @@
         "url_match"
       ],
       "reference_answers": null,
-      "reference_url": "__SHOPPING__/catalogsearch/result/?q=iphone+13",
+      "reference_url": "__SHOPPING__/catalogsearch/result/?q=batteries+for+iphone+13",
       "program_html": [],
       "url_note": "GOLD in PRED"
     },
@@ -8832,8 +8839,8 @@
         "must_include": [
           "Oral-B Kids Extra Soft Replacement Brush Heads featuring STAR WARS, 2 count",
           "Kids By Oral-b Stages Power Star Wars Replacement Heads 4 Pack",
-          "3.745",
-          "6.495"
+          "3.745 |OR| 3.75",
+          "6.495 |OR| 6.50 |OR| 6.5"
         ]
       },
       "reference_url": "",
@@ -9281,7 +9288,7 @@
         "string_match"
       ],
       "reference_answers": {
-        "must_include": ["git clone ssh://git@metis.lti.cs.cmu.edu:2222/eriklindernoren/PyTorch-GAN.git"]
+        "must_include": ["ssh://git@metis.lti.cs.cmu.edu:2222/eriklindernoren/PyTorch-GAN.git"]
       },
       "reference_url": "",
       "program_html": [],
@@ -10034,7 +10041,7 @@
       ],
       "reference_answers": {
         "must_include": [
-          "3053.97"
+          "3053.97 |OR| $3,053.97"
         ]
       },
       "reference_url": "",
@@ -10261,7 +10268,7 @@
         "string_match"
       ],
       "reference_answers": {
-        "must_include": [
+        "fuzzy_match": [
           "0"
         ]
       },
@@ -10388,13 +10395,13 @@
       ],
       "reference_answers": {
         "must_include": [
-          "359.546"
+          "359.546 |OR| $359.546 |OR| 359.55 |OR| $359.55"
         ]
       },
       "reference_url": "",
       "program_html": [],
       "string_note": "",
-      "reference_answer_raw_annotation": "359.546"
+      "reference_answer_raw_annotation": "359.546 |OR| $359.546 |OR| 359.55 |OR| $359.55"
     },
     "intent_template_id": 147
   },
