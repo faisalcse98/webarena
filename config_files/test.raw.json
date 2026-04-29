@@ -1,12 +1,12 @@
 [
   {
     "sites": [
-      "shopping_admin"
+      "shopping_admin1"
     ],
     "task_id": 0,
     "require_login": true,
     "storage_state": "./.auth/shopping_admin_state.json",
-    "start_url": "__SHOPPING_ADMIN__",
+    "start_url": "__SHOPPING_ADMIN1__",
     "geolocation": null,
     "intent_template": "What is the top-{{n}} best-selling product in {{year}}",
     "instantiation_dict": {
