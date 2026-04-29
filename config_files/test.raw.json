@@ -1,7 +1,7 @@
 [
   {
     "sites": [
-      "shopping_admin"
+      "shopping_admin1"
     ],
     "task_id": 0,
     "require_login": true,
