@@ -1,0 +1,33 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9000,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "How much does a {{item}} cost at {{station}} ({{cafe}})?",
+  "instantiation_dict": {
+    "item": "Latte",
+    "station": "Espresso \u2013 Caffe Lusso",
+    "cafe": "Building 2: Caff\u00e8 Lusso"
+  },
+  "intent": "How much does a Latte cost at Espresso \u2013 Caffe Lusso (Building 2: Caff\u00e8 Lusso)?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "$4.09"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Read directly off the Latte item card on the Espresso \u2013 Caffe Lusso menu.",
+    "reference_answer_raw_annotation": "$4.09"
+  },
+  "intent_template_id": 9000
+}

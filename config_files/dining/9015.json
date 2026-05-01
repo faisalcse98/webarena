@@ -1,0 +1,31 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9015,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "How many cafes are listed under the '{{building_label}}' building/location group?",
+  "instantiation_dict": {
+    "building_label": "SUBMIXER CAFETERIA"
+  },
+  "intent": "How many cafes are listed under the 'SUBMIXER CAFETERIA' building/location group?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "3"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "SUBMIXER CAFETERIA groups three cafes: Boardwalk Restaurant, The Commons: Himalaya, and The Commons: Maya's Mexican/Pita Mediterranean.",
+    "reference_answer_raw_annotation": "3"
+  },
+  "intent_template_id": 9015
+}

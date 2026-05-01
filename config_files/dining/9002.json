@@ -1,0 +1,32 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9002,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "What is the price of a {{item}} at {{station}}?",
+  "instantiation_dict": {
+    "item": "Madras Smoothie",
+    "station": "Espresso \u2013 Caffe Lusso"
+  },
+  "intent": "What is the price of a Madras Smoothie at Espresso \u2013 Caffe Lusso?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "$5.79"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Madras Smoothie is in the Smoothies category at Espresso \u2013 Caffe Lusso.",
+    "reference_answer_raw_annotation": "$5.79"
+  },
+  "intent_template_id": 9002
+}

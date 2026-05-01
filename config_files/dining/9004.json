@@ -1,0 +1,32 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9004,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "List the meal periods (e.g. Breakfast, Lunch) shown for {{cafe}}.",
+  "instantiation_dict": {
+    "cafe": "Food Hall 4"
+  },
+  "intent": "List the meal periods (e.g. Breakfast, Lunch) shown for Food Hall 4.",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "Breakfast",
+        "Lunch"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Food Hall 4's cafe page shows two meal periods: Breakfast and Lunch.",
+    "reference_answer_raw_annotation": "Breakfast, Lunch"
+  },
+  "intent_template_id": 9004
+}

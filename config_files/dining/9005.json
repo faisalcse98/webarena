@@ -1,0 +1,33 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9005,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "What are the {{period}} hours at {{cafe}}?",
+  "instantiation_dict": {
+    "period": "Lunch",
+    "cafe": "Food Hall 4"
+  },
+  "intent": "What are the Lunch hours at Food Hall 4?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "10:30 AM",
+        "2:00 PM"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Food Hall 4's Lunch hours render as '10:30 AM - 2:00 PM'.",
+    "reference_answer_raw_annotation": "10:30 AM - 2:00 PM"
+  },
+  "intent_template_id": 9005
+}

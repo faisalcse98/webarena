@@ -1,0 +1,25 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9014,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "Open my Order History page.",
+  "instantiation_dict": {},
+  "intent": "Open my Order History page.",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "url_match"
+    ],
+    "reference_answers": null,
+    "reference_url": "https://dining.microsoft.com/orders/past",
+    "program_html": [],
+    "url_note": "EXACT",
+    "reference_answer_raw_annotation": "/orders/past"
+  },
+  "intent_template_id": 9014
+}

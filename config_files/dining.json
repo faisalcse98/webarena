@@ -1,0 +1,413 @@
+[
+  {
+    "sites": ["dining"],
+    "task_id": 9000,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "How much does a {{item}} cost at {{station}} ({{cafe}})?",
+    "instantiation_dict": {
+      "item": "Latte",
+      "station": "Espresso – Caffe Lusso",
+      "cafe": "Building 2: Caffè Lusso"
+    },
+    "intent": "How much does a Latte cost at Espresso – Caffe Lusso (Building 2: Caffè Lusso)?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["$4.09"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Read directly off the Latte item card on the Espresso – Caffe Lusso menu.",
+      "reference_answer_raw_annotation": "$4.09"
+    },
+    "intent_template_id": 9000
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9001,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "How many calories are in a {{item}} at {{station}}?",
+    "instantiation_dict": {
+      "item": "Strawberry Banana Almond Smoothie",
+      "station": "Espresso – Caffe Lusso"
+    },
+    "intent": "How many calories are in a Strawberry Banana Almond Smoothie at Espresso – Caffe Lusso?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["150"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "The calorie tag on the smoothie is '· 150 Cal'.",
+      "reference_answer_raw_annotation": "150 Cal"
+    },
+    "intent_template_id": 9001
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9002,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "What is the price of a {{item}} at {{station}}?",
+    "instantiation_dict": {
+      "item": "Madras Smoothie",
+      "station": "Espresso – Caffe Lusso"
+    },
+    "intent": "What is the price of a Madras Smoothie at Espresso – Caffe Lusso?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["$5.79"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Madras Smoothie is in the Smoothies category at Espresso – Caffe Lusso.",
+      "reference_answer_raw_annotation": "$5.79"
+    },
+    "intent_template_id": 9002
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9003,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "How many stations does {{cafe}} have?",
+    "instantiation_dict": {
+      "cafe": "Food Hall 4"
+    },
+    "intent": "How many stations does Food Hall 4 have?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["9"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Food Hall 4 lists 9 station cards on its cafe page.",
+      "reference_answer_raw_annotation": "9"
+    },
+    "intent_template_id": 9003
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9004,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "List the meal periods (e.g. Breakfast, Lunch) shown for {{cafe}}.",
+    "instantiation_dict": {
+      "cafe": "Food Hall 4"
+    },
+    "intent": "List the meal periods (e.g. Breakfast, Lunch) shown for Food Hall 4.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["Breakfast", "Lunch"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Food Hall 4's cafe page shows two meal periods: Breakfast and Lunch.",
+      "reference_answer_raw_annotation": "Breakfast, Lunch"
+    },
+    "intent_template_id": 9004
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9005,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "What are the {{period}} hours at {{cafe}}?",
+    "instantiation_dict": {
+      "period": "Lunch",
+      "cafe": "Food Hall 4"
+    },
+    "intent": "What are the Lunch hours at Food Hall 4?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["10:30 AM", "2:00 PM"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Food Hall 4's Lunch hours render as '10:30 AM - 2:00 PM'.",
+      "reference_answer_raw_annotation": "10:30 AM - 2:00 PM"
+    },
+    "intent_template_id": 9005
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9006,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "What menu categories are available at {{station}}?",
+    "instantiation_dict": {
+      "station": "Espresso – Caffe Lusso"
+    },
+    "intent": "What menu categories are available at Espresso – Caffe Lusso?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": [
+          "Bakery",
+          "Cold Drinks",
+          "Fresh Pressed Juices",
+          "Hot Breakfast",
+          "Hot Coffee",
+          "Hot Drinks",
+          "Smoothies"
+        ]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "The seven category tabs on the Espresso – Caffe Lusso menu page.",
+      "reference_answer_raw_annotation": "Bakery, Cold Drinks, Fresh Pressed Juices, Hot Breakfast, Hot Coffee, Hot Drinks, Smoothies"
+    },
+    "intent_template_id": 9006
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9007,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/orders/past",
+    "geolocation": null,
+    "intent_template": "What was the total of past order #{{order_number}}?",
+    "instantiation_dict": {
+      "order_number": "5289050"
+    },
+    "intent": "What was the total of past order #5289050?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["$15.54"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Past-order card and detail for order #5289050 both show '$15.54'.",
+      "reference_answer_raw_annotation": "$15.54"
+    },
+    "intent_template_id": 9007
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9008,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/orders/past",
+    "geolocation": null,
+    "intent_template": "What item was ordered in past order #{{order_number}}?",
+    "instantiation_dict": {
+      "order_number": "3926183"
+    },
+    "intent": "What item was ordered in past order #3926183?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "fuzzy_match": ["Chicken Teriyaki"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Order #3926183 shows the line 'Chicken Teriyaki' on its detail page.",
+      "reference_answer_raw_annotation": "Chicken Teriyaki"
+    },
+    "intent_template_id": 9008
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9009,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/orders/past",
+    "geolocation": null,
+    "intent_template": "When was past order #{{order_number}} placed?",
+    "instantiation_dict": {
+      "order_number": "5289050"
+    },
+    "intent": "When was past order #5289050 placed?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["Apr 15, 2026"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Order #5289050's date label reads 'Apr 15, 2026'.",
+      "reference_answer_raw_annotation": "Apr 15, 2026"
+    },
+    "intent_template_id": 9009
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9010,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "How many items are listed in the {{category}} category at {{station}}?",
+    "instantiation_dict": {
+      "category": "Bakery",
+      "station": "Espresso – Caffe Lusso"
+    },
+    "intent": "How many items are listed in the Bakery category at Espresso – Caffe Lusso?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["10"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "The Bakery section at Espresso – Caffe Lusso has 10 menu items.",
+      "reference_answer_raw_annotation": "10"
+    },
+    "intent_template_id": 9010
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9011,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "What is the price difference (in dollars) between a {{item_a}} and a {{item_b}} at {{station}}?",
+    "instantiation_dict": {
+      "item_a": "Chocolate Croissant",
+      "item_b": "Butter Croissant",
+      "station": "Espresso – Caffe Lusso"
+    },
+    "intent": "What is the price difference (in dollars) between a Chocolate Croissant and a Butter Croissant at Espresso – Caffe Lusso?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "fuzzy_match": ["The Chocolate Croissant ($3.49) is $1.00 more than the Butter Croissant ($2.49)."]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Chocolate Croissant: $3.49, Butter Croissant: $2.49 → difference $1.00.",
+      "reference_answer_raw_annotation": "$1.00"
+    },
+    "intent_template_id": 9011
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9012,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "What is the cheapest item in the {{category}} section at {{station}}, and what does it cost?",
+    "instantiation_dict": {
+      "category": "Hot Coffee",
+      "station": "Espresso – Caffe Lusso"
+    },
+    "intent": "What is the cheapest item in the Hot Coffee section at Espresso – Caffe Lusso, and what does it cost?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["Featured Blend", "$2.59"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "Hot Coffee prices: Pour Over $4.19, Featured Blend $2.59, Espresso con Panna $2.89, Espresso Macchiato $2.89, Espresso $2.79, White Chocolate Mocha $4.89, Caramel Macchiato $4.89, Mocha $4.89, Cappuccino $3.99, Latte $4.09, Americano $3.29 → cheapest is Featured Blend at $2.59.",
+      "reference_answer_raw_annotation": "Featured Blend ($2.59)"
+    },
+    "intent_template_id": 9012
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9013,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "Open the menu page of the only station at the {{cafe}} cafe.",
+    "instantiation_dict": {
+      "cafe": "Building 92: Espresso"
+    },
+    "intent": "Open the menu page of the only station at the Building 92: Espresso cafe.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["url_match"],
+      "reference_answers": null,
+      "reference_url": "https://dining.microsoft.com/cafe/1437e0b7-2200-49ae-b004-d9212358a957/station/033eda48-bafc-4c47-ba94-8ad41fb32db6",
+      "program_html": [],
+      "url_note": "EXACT",
+      "reference_answer_raw_annotation": "/cafe/1437e0b7.../station/033eda48..."
+    },
+    "intent_template_id": 9013
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9014,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "Open my Order History page.",
+    "instantiation_dict": {},
+    "intent": "Open my Order History page.",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["url_match"],
+      "reference_answers": null,
+      "reference_url": "https://dining.microsoft.com/orders/past",
+      "program_html": [],
+      "url_note": "EXACT",
+      "reference_answer_raw_annotation": "/orders/past"
+    },
+    "intent_template_id": 9014
+  },
+  {
+    "sites": ["dining"],
+    "task_id": 9015,
+    "require_login": true,
+    "storage_state": "./.auth/dining_state.json",
+    "start_url": "https://dining.microsoft.com/buildings",
+    "geolocation": null,
+    "intent_template": "How many cafes are listed under the '{{building_label}}' building/location group?",
+    "instantiation_dict": {
+      "building_label": "SUBMIXER CAFETERIA"
+    },
+    "intent": "How many cafes are listed under the 'SUBMIXER CAFETERIA' building/location group?",
+    "require_reset": false,
+    "eval": {
+      "eval_types": ["string_match"],
+      "reference_answers": {
+        "must_include": ["3"]
+      },
+      "reference_url": "",
+      "program_html": [],
+      "string_note": "SUBMIXER CAFETERIA groups three cafes: Boardwalk Restaurant, The Commons: Himalaya, and The Commons: Maya's Mexican/Pita Mediterranean.",
+      "reference_answer_raw_annotation": "3"
+    },
+    "intent_template_id": 9015
+  }
+]

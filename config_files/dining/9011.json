@@ -1,0 +1,33 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9011,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "What is the price difference (in dollars) between a {{item_a}} and a {{item_b}} at {{station}}?",
+  "instantiation_dict": {
+    "item_a": "Chocolate Croissant",
+    "item_b": "Butter Croissant",
+    "station": "Espresso \u2013 Caffe Lusso"
+  },
+  "intent": "What is the price difference (in dollars) between a Chocolate Croissant and a Butter Croissant at Espresso \u2013 Caffe Lusso?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "fuzzy_match": [
+        "The Chocolate Croissant ($3.49) is $1.00 more than the Butter Croissant ($2.49)."
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Chocolate Croissant: $3.49, Butter Croissant: $2.49 \u2192 difference $1.00.",
+    "reference_answer_raw_annotation": "$1.00"
+  },
+  "intent_template_id": 9011
+}

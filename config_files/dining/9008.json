@@ -1,0 +1,31 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9008,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/orders/past",
+  "geolocation": null,
+  "intent_template": "What item was ordered in past order #{{order_number}}?",
+  "instantiation_dict": {
+    "order_number": "3926183"
+  },
+  "intent": "What item was ordered in past order #3926183?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "fuzzy_match": [
+        "Chicken Teriyaki"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Order #3926183 shows the line 'Chicken Teriyaki' on its detail page.",
+    "reference_answer_raw_annotation": "Chicken Teriyaki"
+  },
+  "intent_template_id": 9008
+}

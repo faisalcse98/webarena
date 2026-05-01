@@ -1,0 +1,32 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9010,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "How many items are listed in the {{category}} category at {{station}}?",
+  "instantiation_dict": {
+    "category": "Bakery",
+    "station": "Espresso \u2013 Caffe Lusso"
+  },
+  "intent": "How many items are listed in the Bakery category at Espresso \u2013 Caffe Lusso?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "10"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "The Bakery section at Espresso \u2013 Caffe Lusso has 10 menu items.",
+    "reference_answer_raw_annotation": "10"
+  },
+  "intent_template_id": 9010
+}

@@ -1,0 +1,32 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9001,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "How many calories are in a {{item}} at {{station}}?",
+  "instantiation_dict": {
+    "item": "Strawberry Banana Almond Smoothie",
+    "station": "Espresso \u2013 Caffe Lusso"
+  },
+  "intent": "How many calories are in a Strawberry Banana Almond Smoothie at Espresso \u2013 Caffe Lusso?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "150"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "The calorie tag on the smoothie is '\u00b7 150 Cal'.",
+    "reference_answer_raw_annotation": "150 Cal"
+  },
+  "intent_template_id": 9001
+}

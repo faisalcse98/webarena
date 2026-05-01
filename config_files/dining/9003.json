@@ -1,0 +1,31 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9003,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "How many stations does {{cafe}} have?",
+  "instantiation_dict": {
+    "cafe": "Food Hall 4"
+  },
+  "intent": "How many stations does Food Hall 4 have?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "9"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Food Hall 4 lists 9 station cards on its cafe page.",
+    "reference_answer_raw_annotation": "9"
+  },
+  "intent_template_id": 9003
+}

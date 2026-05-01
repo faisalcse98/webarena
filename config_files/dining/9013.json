@@ -1,0 +1,27 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9013,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "Open the menu page of the only station at the {{cafe}} cafe.",
+  "instantiation_dict": {
+    "cafe": "Building 92: Espresso"
+  },
+  "intent": "Open the menu page of the only station at the Building 92: Espresso cafe.",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "url_match"
+    ],
+    "reference_answers": null,
+    "reference_url": "https://dining.microsoft.com/cafe/1437e0b7-2200-49ae-b004-d9212358a957/station/033eda48-bafc-4c47-ba94-8ad41fb32db6",
+    "program_html": [],
+    "url_note": "EXACT",
+    "reference_answer_raw_annotation": "/cafe/1437e0b7.../station/033eda48..."
+  },
+  "intent_template_id": 9013
+}

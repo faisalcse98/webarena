@@ -1,0 +1,37 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9006,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "What menu categories are available at {{station}}?",
+  "instantiation_dict": {
+    "station": "Espresso \u2013 Caffe Lusso"
+  },
+  "intent": "What menu categories are available at Espresso \u2013 Caffe Lusso?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "Bakery",
+        "Cold Drinks",
+        "Fresh Pressed Juices",
+        "Hot Breakfast",
+        "Hot Coffee",
+        "Hot Drinks",
+        "Smoothies"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "The seven category tabs on the Espresso \u2013 Caffe Lusso menu page.",
+    "reference_answer_raw_annotation": "Bakery, Cold Drinks, Fresh Pressed Juices, Hot Breakfast, Hot Coffee, Hot Drinks, Smoothies"
+  },
+  "intent_template_id": 9006
+}

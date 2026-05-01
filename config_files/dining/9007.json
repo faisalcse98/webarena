@@ -1,0 +1,31 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9007,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/orders/past",
+  "geolocation": null,
+  "intent_template": "What was the total of past order #{{order_number}}?",
+  "instantiation_dict": {
+    "order_number": "5289050"
+  },
+  "intent": "What was the total of past order #5289050?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "$15.54"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Past-order card and detail for order #5289050 both show '$15.54'.",
+    "reference_answer_raw_annotation": "$15.54"
+  },
+  "intent_template_id": 9007
+}

@@ -1,0 +1,31 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9009,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/orders/past",
+  "geolocation": null,
+  "intent_template": "When was past order #{{order_number}} placed?",
+  "instantiation_dict": {
+    "order_number": "5289050"
+  },
+  "intent": "When was past order #5289050 placed?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "Apr 15, 2026"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Order #5289050's date label reads 'Apr 15, 2026'.",
+    "reference_answer_raw_annotation": "Apr 15, 2026"
+  },
+  "intent_template_id": 9009
+}

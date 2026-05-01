@@ -1,0 +1,33 @@
+{
+  "sites": [
+    "dining"
+  ],
+  "task_id": 9012,
+  "require_login": true,
+  "storage_state": "./.auth/dining_state.json",
+  "start_url": "https://dining.microsoft.com/buildings",
+  "geolocation": null,
+  "intent_template": "What is the cheapest item in the {{category}} section at {{station}}, and what does it cost?",
+  "instantiation_dict": {
+    "category": "Hot Coffee",
+    "station": "Espresso \u2013 Caffe Lusso"
+  },
+  "intent": "What is the cheapest item in the Hot Coffee section at Espresso \u2013 Caffe Lusso, and what does it cost?",
+  "require_reset": false,
+  "eval": {
+    "eval_types": [
+      "string_match"
+    ],
+    "reference_answers": {
+      "must_include": [
+        "Featured Blend",
+        "$2.59"
+      ]
+    },
+    "reference_url": "",
+    "program_html": [],
+    "string_note": "Hot Coffee prices: Pour Over $4.19, Featured Blend $2.59, Espresso con Panna $2.89, Espresso Macchiato $2.89, Espresso $2.79, White Chocolate Mocha $4.89, Caramel Macchiato $4.89, Mocha $4.89, Cappuccino $3.99, Latte $4.09, Americano $3.29 \u2192 cheapest is Featured Blend at $2.59.",
+    "reference_answer_raw_annotation": "Featured Blend ($2.59)"
+  },
+  "intent_template_id": 9012
+}

@@ -8,6 +8,10 @@ GITLAB = os.environ.get("GITLAB", "")
 WIKIPEDIA = os.environ.get("WIKIPEDIA", "")
 MAP = os.environ.get("MAP", "")
 HOMEPAGE = os.environ.get("HOMEPAGE", "")
+# Microsoft Dining (dining.microsoft.com) — internal Microsoft site for
+# browsing on-campus cafes, viewing menus, ordering for pickup. Defaults
+# to the production URL since there is no self-hostable variant.
+DINING = os.environ.get("DINING", "https://dining.microsoft.com")
 
 assert (
     REDDIT
@@ -38,6 +42,9 @@ ACCOUNTS = {
     },
     "shopping_admin": {"username": "admin", "password": "admin1234"},
     "shopping_site_admin": {"username": "admin", "password": "admin1234"},
+    # Dining uses Microsoft SSO; the storage_state JSON exported from the
+    # Edge user-data-dir at ~/.dining_context is the credential.
+    "dining": {"username": "<msft sso>", "password": "<msft sso>"},
 }
 
 URL_MAPPINGS = {
@@ -48,4 +55,5 @@ URL_MAPPINGS = {
     WIKIPEDIA: "http://wikipedia.org",
     MAP: "http://openstreetmap.org",
     HOMEPAGE: "http://homepage.com",
+    DINING: "http://dining.microsoft.com",
 }
