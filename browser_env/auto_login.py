@@ -58,10 +58,12 @@ def is_expired(
             return url not in d_url
 
 
-def renew_comb(comb: list[str], auth_folder: str = "./.auth") -> None:
+def renew_comb(
+    comb: list[str], auth_folder: str = "./.auth", headless: bool = HEADLESS
+) -> None:
     context_manager = sync_playwright()
     playwright = context_manager.__enter__()
-    browser = playwright.chromium.launch(headless=HEADLESS)
+    browser = playwright.chromium.launch(headless=headless)
     context = browser.new_context()
     page = context.new_page()
 
