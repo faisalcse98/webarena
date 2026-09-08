@@ -6,7 +6,9 @@ openai
 types-tqdm
 tiktoken
 aiolimiter
-beartype==0.12.0
+beartype>=0.12.0
+# numpy>=2.5.0 breaks every released beartype via PEP 695 NDArray alias (beartype #672); unpin once beartype>0.22.9 ships the fix
+numpy<2.5
 flask
 nltk
 text-generation
